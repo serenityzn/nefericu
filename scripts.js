@@ -14,8 +14,8 @@ function createDots() {
         dots.push({
             x: Math.random() * canvas.width,
             y: Math.random() * canvas.height,
-            vx: (Math.random() - 0.5) * 2.8, // Slower movement
-            vy: (Math.random() - 0.5) * 2.8 // Slower movement
+            vx: (Math.random() - 0.5) * 0.8, // Slower movement
+            vy: (Math.random() - 0.5) * 0.8 // Slower movement
         });
     }
 }
