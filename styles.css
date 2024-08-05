@@ -108,11 +108,19 @@ nav a:hover {
 }
 
 main {
-    padding: 20px;
+    padding: 20px 4cm;
     z-index: 1;
     position: relative;
     padding-bottom: 50px; /* Add padding to prevent overlapping with footer */
     text-align: left; /* Align text to the left */
+}
+
+mmain {
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+    padding-bottom: 50px; /* Add padding to prevent overlapping with footer */
+    text-align: center; /* Align text to the left */
 }
 
 section {
