@@ -2,7 +2,7 @@ const canvas = document.getElementById('background-canvas');
 const ctx = canvas.getContext('2d');
 
 let dots = [];
-const numberOfDots = 300; // Reduced number of dots
+const numberOfDots = 250; // Reduced number of dots
 const maxDistance = 135; // Increased distance for wider movement
 
 canvas.width = window.innerWidth;
