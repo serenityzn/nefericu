@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark text for contrast */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    color: #333333; /* Dark text color for links */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4a90e2; /* Change link color on hover */
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    width: 200px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-container:hover .dropdown {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown li {
+    padding: 10px;
+    margin: 0; /* Remove margin to avoid extra spacing */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Light border for separation */
+}
+
+.dropdown li:last-child {
+    border-bottom: none;
+}
+
+.dropdown a {
+    color: #333333; /* Dark text color for links */
+    text-decoration: none;
+    display: block; /* Ensures the link takes up the full height of the list item */
+    padding: 10px; /* Consistent padding */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.dropdown a:hover {
+    color: #4a90e2; /* Highlight text color on hover */
+}
+
+.canvas-container {
+    position: relative;
+    flex: 1;
+}
+
+main {
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+    padding-bottom: 50px; /* Add padding to prevent overlapping with footer */
+    text-align: left; /* Align text to the left */
+}
+
+section {
+    margin: 20px 0;
+    padding: 0; /* Remove padding */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove box shadow */
+}
+
+h2 {
+    color: #4a90e2; /* Color for section headings */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove margin to align items properly */
+}
+
+ul li {
+    background: none; /* Remove background */
+    margin: 10px 0; /* Margin for spacing */
+    padding: 0; /* Remove padding */
+    border-radius: 0; /* Remove border radius */
+    box-shadow: none; /* Remove shadow */
+}
+
+footer {
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark text for contrast */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#background-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
