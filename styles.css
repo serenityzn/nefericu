@@ -12,8 +12,23 @@ body {
 header {
     background-color: #ffffff; /* White background */
     color: #333333; /* Dark text for contrast */
-    padding: 20px;
-    text-align: center;
+    padding: 10px 20px; /* Adjust padding to fit the logo */
+    display: flex;
+    align-items: center;
+    height: 60px; /* Set a fixed height for the header */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    height: 100%; /* Scale logo to fit the header height */
+    max-height: 100px; /* Optional: Set a max height if needed */
+    margin-right: 50px; /* Space between logo and navigation */
+    width: auto; /* Maintain aspect ratio */
 }
 
 nav ul {
@@ -21,16 +36,16 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
     position: relative;
+    margin-right: 15px; /* Space between menu items */
 }
 
 nav a {
     color: #333333; /* Dark text color for links */
-    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
